@@ -13,11 +13,17 @@ In this repository we will present our work in our first year as computer scienc
 ### Work required:
  In the first step, program the singly linked linear list model seen in class.
 Write and program the following modules:
+
 A procedure "creer_tabjo" that creates "tabpays" and "tabépreuve" as well as the matrix of linked lists "tabjo" containing the names of all athletes from all countries in all events. To quickly fill this structure, you can randomly generate, for each country, a number between 0 and 10 corresponding to the number of registered athletes for a given event. For each element of "tabjo", you can also randomly generate athlete names of up to 25 characters.
+
 A procedure "inserath" (nomath: string; nump, nume: integer) that inserts a new athlete, defined by their name "nomath", country number "nump", and event number "nume". The insertion should only be done if the following two conditions are met for that country and event: there are fewer than "maxathletes" athletes already registered, and "nomath" is not already listed.
+
 A procedure "listathpays" (pays: string) that lists the names of all athletes from a given country, sorted by event. You should display the name of each event for which at least one athlete from the country is registered, followed by the (unsorted) list of athlete names. If the country is not known, you should display an error message.
+
 A function "sansath" (ne: integer): boolean that returns true only if no athlete is registered for the event number "ne", i.e., if the row "ne" only contains NIL values.
+
 A procedure "listjo" that displays the complete content of the "tabjo" matrix, event by event: for each event in which at least one athlete is registered, we display the name of the event, followed by the name of each country that has registered competitors and the names of the registered athletes.
+
 A procedure "suppays" (pays: string) that allows a country to be removed from the "tabjo" and "tabpays" structures following the announcement of its withdrawal.
 
 *Benefits of implementing this project include efficient organization and management of athlete registrations for the Olympic Games, as well as the ability to easily add, remove, and search for athlete and country data.*
